@@ -2,6 +2,17 @@ apiVersion: apps/v1
 kind: Deployment
   {{ .Values.mysql_image.repository }}
 
+  {{- .Values.customblock.author.name}}
+  {{- .Values.customblock.author.address}}
+
+
+  {{- "Values from Chart"}}
+  {{- .Chart.ApiVersion}}
+  {{- .Chart.Name}}
+  {{- .Chart.Version}}
+  {{- .Chart.Keywords}}
+  {{- .Chart.Maintainers}}
+
 metadata:
   name: {{ include "my-first-chart.fullname" . }}
   labels:

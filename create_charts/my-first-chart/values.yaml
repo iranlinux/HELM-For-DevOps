@@ -11,6 +11,13 @@ customblock:
       - "Camela"
       - "Julia"
 
+customblock:
+  author:
+    name: "Max"
+    address: "Street 5, 243, New York"
+
+
+
 replicaCount: 3
 image:
   repository: nginx
