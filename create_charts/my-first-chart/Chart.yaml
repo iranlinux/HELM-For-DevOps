@@ -33,7 +33,7 @@ appVersion: "1.16.0"
 
 dependencies:
   - name : mysql
-    version : "9.4.5"
+    version : "14.0.3"
     repository : "https://charts.bitnami.com/bitnami"
     condition : mysql.enabled   
     import-values :
@@ -41,6 +41,6 @@ dependencies:
         parent : mysql_image 
 
   - name : rabbitmq
-    version : "11.2.2"
+    version : "16.0.14"
     repository : "https://charts.bitnami.com/bitnami"
     condition : rabbitmq.enabled
